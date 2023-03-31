@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Krona+One&family=Montserrat:wght@400;600&family=Oswald:wght@200&display=swap');
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-fundo: #00030C;  
+
+    --fonte-principal: 'Inter', sans-serif;
+    
+    --botao-vermelho-efeito: #ff3c00;
+
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("./img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10% 4%;
+}
+
+.container__content {
+    padding-right: 175px;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 22px;
+}
+
+.container__imagem {
+    /* padding-bottom: 54px; */
+    margin: 1em 0 2em 0;
+}
+
+.container__div__botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.container__botao {    
+    display: block;
+    text-align: center;
+    background-color: var(--botao-azul);
+    border-radius: 8px;    
+    padding: 16px;
+        
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+    padding-top: 10px;
+}
+
+
+
+.botao__secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    /* border-radius: 8px; */
+    
+}
+
+.secundario, .terciario, .quaternario, .quintenario {
+    align-items: center;
+    margin: 0 10em;
+    padding: 6em 0;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.descricao__titulo {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+/* .container__descricao {
+    text-align: center;
+    gap: 5em;
+} */
+
+.terciario__div {    
+    padding-right: 7em;
+}
+
+.texto__terciario {
+    text-align: left;
+    padding-bottom: 1em;
+}
+
+.botao__terciario {
+    display: inline-block;
+    padding: 1em;
+    /* width: 10em; */
+}
+
+.terciario__imagem {
+    text-align: auto;
+}
+
+.quintenario {
+    text-align: center;
+}
+
+.quintenario__dispositivos {
+    display: grid; 
+    align-content: space-evenly;  
+    justify-items: center; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80% 20%;
+    text-align: center;
+    justify-content: center;
+}
+
+.quintenario__imagem {    
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    max-width: fit-content;
+    height: auto;
+}
+
+.quintenario__subtitulo {
+    font-size: 32px;
+    margin-top: 0.125em;
+    /* padding: 0.1em; */
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    text-align: center;
+    align-self: center;    
+    margin: 1em;
+    padding: 0 7em;
+}
+
+.footer__image {   
+    align-self: center;
+    max-width: 102px;
+    margin: 1em 0 2em 0;
+}
+
+.footer__links {
+    display: flex;
+    list-style-type: none;    
+    color: var(--branco-principal);
+    justify-content: space-between;
+    padding: 0 2em;
+}
+
+.footer__rights{
+    color: var(--cinza-secundario);
+    margin: 1em 0;
+    font-size: 14px;
+}
+
+.footer__text {
+    color: var(--cinza-secundario);
+    margin: 1em 0 3em 0;
+    font-size: 14px;
+}
+
+.footer__links a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.footer__links a:hover {
+    color: var(--botao-azul);
+}
+
+.footer__links a:active {
+    color: purple;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-vermelho-efeito);
+    color: var(--cor-fundo);    
+}
